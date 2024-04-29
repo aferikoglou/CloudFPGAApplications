@@ -4,32 +4,30 @@ This GitHub repository contains accelerated applications for cloud FPGAs.
 
 ## Available Applications
 
-1. [ ] RodiniaHLS KNN Baseline
+1. [ ] **RodiniaHLS KNN Baseline**
    - [ ] ALVEO U50
       - [ ] @100 MHz
       - [ ] @200 MHz
       - [ ] @300 MHz
-      - [ ] Input Data Scaling
       - [ ] Multiple Accelerators
    - [ ] ALVEO U200
       - [x] @100 MHz
       - [x] @200 MHz
       - [x] @300 MHz
-      - [ ] Input Data Scaling
       - [ ] Multiple Accelerators
-2. [ ] RodiniaHLS KNN Tiling
+   - [ ] Input Data Scaling
+2. [ ] **RodiniaHLS KNN Tiling**
    - [ ] ALVEO U50
       - [ ] @100 MHz
       - [ ] @200 MHz
       - [ ] @300 MHz
-      - [ ] Input Data Scaling
       - [ ] Multiple Accelerators
    - [ ] ALVEO U200
       - [x] @100 MHz
       - [x] @200 MHz
       - [x] @300 MHz
-      - [ ] Input Data Scaling
       - [ ] Multiple Accelerators
+   - [ ] Input Data Scaling
 
 ## Repository Structure
 
@@ -51,3 +49,31 @@ This GitHub repository contains accelerated applications for cloud FPGAs.
    - `...`
 - `300/` Contains the application versions @300 MHz
    - `...`
+
+## Build & Run
+
+1. Navigate to the desired directory
+2. Build application using the Makefile
+```bash
+make all TARGET=<sw_emu/hw> DEVICE=<FPGA platform>
+```
+For the **ALVEO U200**:
+```bash
+make all TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_1_202110_1
+```
+3. Run the executable
+```bash
+make run TARGET=<sw_emu/hw> DEVICE=<FPGA platform>
+```
+For the **ALVEO U200**:
+```bash
+make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_1_202110_1
+```
+For the pre-built application you can simply build the host i.e., app.exe and execute:
+```bash
+./app.exe knn.xclbin knn
+```
+4. Clean
+```bash
+make clean
+```
