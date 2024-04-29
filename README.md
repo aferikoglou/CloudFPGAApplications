@@ -4,32 +4,32 @@ This GitHub repository contains accelerated applications for cloud FPGAs.
 
 ## Available Applications
 
-1. [] RodiniaHLS KNN Baseline
-   - [] ALVEO U50
-      - [] @100 MHz
-      - [] @200 MHz
-      - [] @300 MHz
-      - [] Input Data Scaling
-      - [] Multiple Accelerators
-   - [] ALVEO U200
+1. [ ] RodiniaHLS KNN Baseline
+   - [ ] ALVEO U50
+      - [ ] @100 MHz
+      - [ ] @200 MHz
+      - [ ] @300 MHz
+      - [ ] Input Data Scaling
+      - [ ] Multiple Accelerators
+   - [ ] ALVEO U200
       - [x] @100 MHz
       - [x] @200 MHz
       - [x] @300 MHz
-      - [] Input Data Scaling
-      - [] Multiple Accelerators
-2. [] RodiniaHLS KNN Tiling
-   - [] ALVEO U50
-      - [] @100 MHz
-      - [] @200 MHz
-      - [] @300 MHz
-      - [] Input Data Scaling
-      - [] Multiple Accelerators
-   - [] ALVEO U200
+      - [ ] Input Data Scaling
+      - [ ] Multiple Accelerators
+2. [ ] RodiniaHLS KNN Tiling
+   - [ ] ALVEO U50
+      - [ ] @100 MHz
+      - [ ] @200 MHz
+      - [ ] @300 MHz
+      - [ ] Input Data Scaling
+      - [ ] Multiple Accelerators
+   - [ ] ALVEO U200
       - [x] @100 MHz
       - [x] @200 MHz
       - [x] @300 MHz
-      - [] Input Data Scaling
-      - [] Multiple Accelerators
+      - [ ] Input Data Scaling
+      - [ ] Multiple Accelerators
 
 ## Repository Structure
 
