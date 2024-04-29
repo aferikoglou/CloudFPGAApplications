@@ -4,6 +4,8 @@ This GitHub repository contains accelerated applications for cloud FPGAs.
 
 ## Available Applications
 
+Focused on [RodiniaHLS](https://github.com/SFU-HiAccel/rodinia-hls/tree/master) benchmark suite.
+
 1. [ ] **RodiniaHLS KNN Baseline**
    - [ ] ALVEO U50
       - [ ] @100 MHz
@@ -69,7 +71,7 @@ For the **ALVEO U200**:
 ```bash
 make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_1_202110_1
 ```
-For the pre-built application you can simply build the host i.e., app.exe and execute:
+For the pre-built applications you can simply build the host i.e., app.exe and execute:
 ```bash
 ./app.exe knn.xclbin knn
 ```
