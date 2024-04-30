@@ -52,6 +52,17 @@ Focused on [RodiniaHLS](https://github.com/SFU-HiAccel/rodinia-hls/tree/master) 
 - `300/` Contains the application versions @300 MHz
    - `...`
 
+## Connect
+
+You have access to two servers enabled with FPGAs named **Coroni** and **Skylla**. Prefer **Coroni** for your experiments.
+
+```bash
+# Connect to Coroni
+ssh dtomkou@coroni.microlab.ntua
+# Connect to Skylla
+ssh dtomkou@skylla.physics.auth.gr
+```
+
 ## Build & Run
 
 1. Navigate to the desired directory
@@ -61,6 +72,9 @@ make all TARGET=<sw_emu/hw> DEVICE=<FPGA platform>
 ```
 For the **ALVEO U200**:
 ```bash
+# @Coroni
+make all TARGET=hw DEVICE=xilinx_u200_xdma_201830_2
+# @Skylla
 make all TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_1_202110_1
 ```
 3. Run the executable
@@ -69,10 +83,14 @@ make run TARGET=<sw_emu/hw> DEVICE=<FPGA platform>
 ```
 For the **ALVEO U200**:
 ```bash
+# @Coroni
+make run TARGET=hw DEVICE=xilinx_u200_xdma_201830_2
+# @Skylla
 make run TARGET=hw DEVICE=xilinx_u200_gen3x16_xdma_1_202110_1
 ```
-For the pre-built applications you can simply build the host i.e., app.exe and execute:
+For the pre-built applications you can simply build the host (make host) i.e., app.exe and execute:
 ```bash
+# These applications are built @Skylla and you can execute them there
 ./app.exe knn.xclbin knn
 ```
 4. Clean
